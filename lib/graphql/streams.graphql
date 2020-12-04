@@ -1,0 +1,8 @@
+query Streams {
+  streams {
+    id
+    title
+    description
+    url
+  }
+}

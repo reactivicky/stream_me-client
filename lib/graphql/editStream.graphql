@@ -1,0 +1,15 @@
+mutation EditStream(
+  $streamId: Float!
+  $title: String
+  $description: String
+  $url: String
+) {
+  editStream(
+    streamId: $streamId
+    data: { title: $title, description: $description, url: $url }
+  ) {
+    id
+    title
+    description
+  }
+}

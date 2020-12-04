@@ -1,0 +1,8 @@
+mutation CreateStream($title: String!, $description: String, $url: String!) {
+  addStream(data: { title: $title, description: $description, url: $url }) {
+    id
+    title
+    description
+    url
+  }
+}

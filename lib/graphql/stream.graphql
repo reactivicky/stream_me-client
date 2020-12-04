@@ -1,0 +1,12 @@
+query Stream($streamId: Float!) {
+  stream(streamId: $streamId) {
+    id
+    title
+    description
+    url
+    user {
+      id
+      email
+    }
+  }
+}
